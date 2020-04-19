@@ -114,23 +114,23 @@ class App extends Component {
                     <th>Total Recovered</th>
                   </tr>
             </thead>
-            <tbody>     
-
-     {/* {  
-           Object.keys(this.state.countries).map((country) => (          
-            <tr>   
-                  <td>{this.state.countries[country]}</td> 
-                  <td>........</td>
-                  <td>........</td>
-                  <td> ........</td>
-                  <td>.........</td>    
-           </tr> 
-         ))
-      }   */}
-
-          </tbody>
-    </table> 
-  </div>              
+           <tbody>  
+    {
+      this.state.countries.map((country,i=0) => {
+      return(
+              <tr>
+                    <td>{i++}</td>
+                    <td> { country.Country } </td>
+                    <td> { country.TotalConfirmed } </td>
+                    <td>{ country.TotalDeaths }</td>
+                    <td>{ country.TotalRecovered }</td>
+              </tr>
+      );
+   })
+  }
+</tbody>
+  </table> 
+</div>              
 </div>
   ); 
   }
