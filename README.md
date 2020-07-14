@@ -1,3 +1,11 @@
+fetch data from the covid-19 api and display them in table. 
+
+has search functionality, can search for particular keyword.
+
+displays some of the informations about the covid-19 cases in particular places. 
+
+-------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
